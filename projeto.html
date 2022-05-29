@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfólio</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="Porfolio.js" defer> </script>
+  </head>
 <body>
 <header>
-     <nav>
-        <ul class="container">
-        <li> <a href= "#Apresentação">Apresentação</a></li>  
-        <li> <a href= "#Formação">Formação</a></li>
-        <li>  <a href="#Experiência">Experiencia</a></li>
-        <li> <a href="#Qualificação">Qualificaçâo</a></li>
-        <li> <a href="#Fale commigo">Fale commigo</a></li>
+     <nav class="menu">
+        <ul class="menu li a">
+        <li> <a href= "#Apresentação">APRESENTAÇÃO</a></li>  
+        <li> <a href= "#Formação">FORMAÇÃO</a></li>
+        <li>  <a href="#Experiência">EXPERIÊNCIA</a></li>
+        <li> <a href="#Qualificação">QUALIFICAÇÃO</a></li>
+        <li> <a href="#Fale commigo">FALE CONMIGO</a></li>
         </ul>
  </nav>
 </header>
@@ -23,34 +24,36 @@
     <img class= "img" src="imagen/David.png" width="50px" height="50px"alt="david">
     </div>
     <div class="container">
-    <img a href= "https://github.com/drodriguezx"src="imagen/logo_github.png" width="50px"height="50px" alt="repositorio github"class="img2">
-    <img a href= "linkedin.com/in/david-a-rodríguez-p-78016957"src="imagen/Linkedin.png"width="50px" height="50px" alt="cuenta linkedin"class="img3">
-    <img a href= "https://www.youtube.com/channel/UCQjNG09T9jIqwmx_ZC0QpXw"src="imagen/Youtube.png" width="50px" height="50px" alt="cuenta de youtube"class="img4">
+       <a href= "https://github.com/drodriguezx"><img src="imagen/logo_github.png" width="50px"height="50px" alt="repositorio github"class="img2"> </a>
+       <a href= "linkedin.com/in/david-a-rodríguez-p-78016957"> <img src="imagen/Linkedin.png"width="50px" height="50px" alt="cuenta linkedin"class="img3"></a>
+       <a href= "https://www.youtube.com/channel/UCQjNG09T9jIqwmx_ZC0QpXw"> <img src="imagen/Youtube.png" width="50px" height="50px" alt="cuenta de youtube"class="img4"> </a>
 </div>
-<div class="titulo1">
-<h1> <a name ="Apresentação"> David Rodriguez</h1> 
+<div>
+<h1><a name ="Apresentação"> David Rodriguez </h1> 
         <h3>Full Stack Developer</h3>
-         <p>Olá muito prazer conhecer a voçê. sou uma pessoa com um espírito de equipe e uma capacidade de adaptação a novos aprendizagens. Me considero uma pessoa pontal. Trabalhador. Atento e competente.</p>
+         <p>Olá muito prazer conhecer a voçê.  Eu, sou uma pessoa com um espírito de equipe e uma capacidade de adaptação a novos aprendizagens.</p>
          </div>
-<section>
-<h2 class="formação"><a name ="Formação"> Formação </h2>
-    <article class="artigo1">
-<p>2009-2015</p>
+         <div class="formação" >
+<section >
+<h2><a name ="Formação"> Formação </h2>
+   <p>2009-2015</p>
 <p>Bacharel em direito</p>
 <p>Universidade Santa Maria, Caracas-Venezuela</p>
-</article>
 </section>
 <section>
 <p>2021-Atual</p>
 <p>Mestrado em Direitos Humanos e Políticas Públicas</p>
 <p>Pontíficia Universidade Católica do Paraná</p>
 </section>
+</div>
+<div class="experiencia">
 <section>
     <h2> <a name="Experiência"> Experiência</h2>
 <p>2019-2021</p>
 <p>Operador de Loja</p>
 <p>Supermercado Assaí</p>  
 </section>
+</div>
 <section>
     <h2> <a name="Qualificação"> Qualificação </h2>
 <p>2020</p>
@@ -61,29 +64,54 @@
 <p>Full Stack Developer</p>
 <p>Toti Diversidade</p>
 </section>
-</body>
 <footer>
-<div>
-    <section>
-        <h2><a name="Fale commigo"> Fale commigo</h2>
-        <p>Quer entrar em contato commigo?</p>
-        <p>preenche o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-        <p>Voçê também pode me encontrar nas siguentes redes sociais</p>
-    </section>
-    </div>
-    <div>
-        <form action="www.google.com" method="get">
-        <h4>NOME</h4>
-        <label for="nome">
-        <input type="text" name="Nome" placeholder="" required>
-        <h4>E-MAIL</h4>
-        <input type="email" name="email" id="email" > 
-        <h4> ASSUNTO</h4>
-        <input type="text" name="assunto"placeholder=""required>
-        <h4>MENSAGEM</h4>
-                <textarea name="DESCRIPTIÓN" id="DESCRIPTION" cols="30" rows="10"></textarea>
-        <button type="submit"> ENVIAR </button>
-    </form>
+    <form action="" method="post" id="form">
+        <table class="table">
+            <tr>
+                <td><a name="Fale commigo"> Fale commigo</td>
+            </tr>
+            <tr>
+                <td>Quer entrar em contato commigo</td>
+                <td>
+                    <input type="text" id="nome" name="nome"placeholder="nome">
+                </td>
+            </tr>
+            <tr>
+               <td>Preenche o formulário ao lado e entrarei em contato o mais rápido possível.</td>
+               <td>
+                   <input type="email" id="email" name="email" placeholder="email" >
+               </td>
+           </tr>
+           <tr>
+               <td></td>
+               <td>
+                   <input type="text" id="assunto" name="assunto" placeholder="assunto">
+               </td>
+           </tr>
+              <tr>
+               <td></td>
+               <td>
+           </td>
+           </tr>
+           <tr>
+               <td>Voçê também pode me encontrar nas siguentes redes sociais</td>
+               <td>
+               <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem"></textarea>
+               </td>
+           </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">enviar</button>
+                   <p class="warnings" id="warnings"></p>
+                </td>
+            </tr>
+            </table>
+            <div>
+                <a href="linkedin.com/in/david-a-rodríguez-p-78016957"><img src="./imagen/Linkedin.png" width="50px" height="50px"></a>
+                <a href=" http://lattes.cnpq.br/5021040527506409"> <img src="./imagen/Lattes.png"  width="50px" height="50px"></a>
+                <a href="https://www.youtube.com/channel/UCQjNG09T9jIqwmx_ZC0QpXw"> <img src="./imagen/Youtube.png" width="50px" height="50px"></a>
             </div>
-           </footer>         
+    </footer> 
+   </body>       
 </html>
